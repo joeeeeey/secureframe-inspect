@@ -26,7 +26,7 @@ The implementation is initially delivered in a pull request. Until that PR is me
 reviewers can install the branch with:
 
 ```sh
-npx skills@1.7.1 add https://github.com/joeeeeey/secureframe-ops/tree/feat/standalone-skill --agent codex claude-code cursor --yes
+npx skills@1.7.1 add 'https://github.com/joeeeeey/secureframe-ops#feat/standalone-skill' --agent codex claude-code cursor --yes
 ```
 
 Then ask your agent to use **secureframe-ops**. The standard SKILL.md and bundled CLI are the
