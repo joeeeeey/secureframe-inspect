@@ -1,8 +1,8 @@
 {
-  "name": "secureframe-ops-browser",
+  "name": "secureframe-inspect-browser",
   "version": "0.1.0",
   "private": true,
-  "description": "Optional local browser session and metadata capture for Secureframe Ops",
+  "description": "Optional local browser session and metadata capture for Secureframe Inspect",
   "license": "MIT",
   "engines": {
     "node": ">=22.20.0"

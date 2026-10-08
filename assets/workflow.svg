@@ -1,11 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="944" height="342" viewBox="0 0 944 342" role="img" aria-labelledby="title desc">
-<title id="title">Secureframe Ops</title><desc id="desc">A compliance baseline without a folder full of personal data. Read metadata → Count statuses → Private baseline.</desc>
-<style>text{font-family:system-ui,-apple-system,Segoe UI,sans-serif} .pulse{animation:flow 4s ease-in-out infinite} @keyframes flow{0%,100%{opacity:.35;transform:translateX(0)}50%{opacity:1;transform:translateX(540px)}} @media(prefers-reduced-motion:reduce){.pulse{animation:none}}</style>
-<rect width="944" height="342" rx="22" fill="#0b1222"/><path d="M0 1 H944" stroke="#38bdf8" stroke-width="3" opacity=".65"/>
-<text x="42" y="46" fill="#38bdf8" font-size="12" letter-spacing="3">AGENT SKILL / COMMUNITY EDITION</text>
-<text x="42" y="91" fill="#f8fafc" font-size="34" font-weight="700">Secureframe Ops</text>
-<text x="42" y="124" fill="#9eb0ca" font-size="16">A compliance baseline without a folder full of personal data.</text>
-<rect x="42" y="160" width="260" height="108" rx="16" fill="#152038" stroke="#2c3d59"/><text x="64" y="192" fill="#38bdf8" font-size="12" letter-spacing="2">01</text><text x="64" y="231" fill="#edf3ff" font-size="21" font-weight="600">Read metadata</text><path d="M 307 214 H 334 m -7 -5 7 5 -7 5" stroke="#38bdf8" stroke-width="2" fill="none"/><rect x="342" y="160" width="260" height="108" rx="16" fill="#152038" stroke="#2c3d59"/><text x="364" y="192" fill="#38bdf8" font-size="12" letter-spacing="2">02</text><text x="364" y="231" fill="#edf3ff" font-size="21" font-weight="600">Count statuses</text><path d="M 607 214 H 634 m -7 -5 7 5 -7 5" stroke="#38bdf8" stroke-width="2" fill="none"/><rect x="642" y="160" width="260" height="108" rx="16" fill="#152038" stroke="#2c3d59"/><text x="664" y="192" fill="#38bdf8" font-size="12" letter-spacing="2">03</text><text x="664" y="231" fill="#edf3ff" font-size="21" font-weight="600">Private baseline</text>
-<path d="M 62 287 H 882" stroke="#263953" stroke-width="2"/><rect class="pulse" x="64" y="285" width="280" height="4" rx="2" fill="#38bdf8"/>
-<text x="42" y="321" fill="#90a3bf" font-size="12">CODEX / CLAUDE CODE / CURSOR</text><text x="901" y="321" text-anchor="end" fill="#90a3bf" font-size="12">PORTABLE CLI · EXPLICIT SCOPE</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="sf-title sf-desc">
+<title id="sf-title">Secureframe Inspect</title>
+<desc id="sf-desc">Illustration of a count-only compliance baseline matrix with fetched, total and status bucket counts and a complete flag, beside a browser GraphQL gate where a query is allowed through as metadata and a mutation is blocked. A passing count is not compliance certification.</desc>
+<style>
+.sf-s{font-family:"Avenir Next","Segoe UI","Helvetica Neue",Arial,sans-serif}
+.sf-m{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Courier New",monospace}
+.sf-scan{animation:sf-scan 6s ease-in-out infinite}
+@keyframes sf-scan{0%{transform:translateX(0);opacity:1}60%{transform:translateX(262px);opacity:1}75%{transform:translateX(262px);opacity:0}99%{transform:translateX(0);opacity:0}100%{transform:translateX(0);opacity:1}}
+.sf-q{animation:sf-q 6s ease-in-out infinite}
+@keyframes sf-q{0%,10%{transform:translateX(0);opacity:1}45%{transform:translateX(160px);opacity:1}55%{transform:translateX(160px);opacity:0}56%{transform:translateX(0);opacity:0}70%,100%{transform:translateX(0);opacity:1}}
+.sf-mu{animation:sf-mu 6s ease-in-out infinite}
+@keyframes sf-mu{0%,10%{transform:translateX(0);opacity:1}38%{transform:translateX(54px);opacity:1}44%{transform:translateX(46px)}50%,68%{transform:translateX(54px);opacity:1}78%{transform:translateX(54px);opacity:0}79%{transform:translateX(0);opacity:0}90%,100%{transform:translateX(0);opacity:1}}
+.sf-wall{animation:sf-wall 6s ease-in-out infinite}
+@keyframes sf-wall{0%,36%,60%,100%{opacity:1}44%,52%{opacity:.6}}
+.sf-run{stroke-dasharray:8 92;animation:sf-run 3s linear infinite}
+@keyframes sf-run{from{stroke-dashoffset:0}to{stroke-dashoffset:-100}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="1000" height="500" fill="#F1EBFF"/>
+
+<!-- header -->
+<text class="sf-s" x="36" y="72" font-size="48" font-weight="800" fill="#1A1F4B" letter-spacing="-1.5">Secureframe <tspan fill="#4B1FA8">Inspect</tspan></text>
+<text class="sf-s" x="36" y="104" font-size="18" font-weight="600" fill="#1A1F4B">A compliance baseline without a folder full of personal data.</text>
+<rect x="664" y="40" width="300" height="30" rx="15" fill="#FFC21A"/>
+<text class="sf-s" x="814" y="60" font-size="13" font-weight="800" fill="#1A1F4B" text-anchor="middle" letter-spacing=".4">ILLUSTRATIVE / SYNTHETIC DATA</text>
+
+<!-- matrix panel -->
+<path d="M62 130 H534 Q560 130 560 156 V444 Q560 470 534 470 H62 Q36 470 36 444 V156 Q36 130 62 130 Z" fill="#4B1FA8"/>
+<path d="M36 170 H560 V444 Q560 470 534 470 H62 Q36 470 36 444 Z" fill="#fff"/>
+<text class="sf-s" x="54" y="157" font-size="17" font-weight="800" fill="#fff">Count-only baseline</text>
+<text class="sf-s" x="542" y="157" font-size="14" font-weight="700" fill="#FFC21A" text-anchor="end">no names · IDs · emails</text>
+
+<g class="sf-s" font-size="14" font-weight="800" fill="#1A1F4B" text-anchor="middle">
+<text x="166" y="198">fetched</text><text x="228" y="198">total</text><text x="290" y="198">pass</text><text x="352" y="198">fail</text><text x="414" y="198">other</text><text x="496" y="198">complete</text>
+</g>
+<g class="sf-s" font-size="15" font-weight="800" fill="#1A1F4B">
+<text x="54" y="236">tests</text><text x="54" y="280">controls</text><text x="54" y="324">vendors</text><text x="54" y="368">devices</text><text x="54" y="412">users</text>
+</g>
+<!-- cells: rows at y=210,254,298,342,386 -->
+<g>
+<g fill="#E4D9FF"><rect x="138" y="210" width="56" height="40" rx="10"/><rect x="200" y="210" width="56" height="40" rx="10"/><rect x="138" y="254" width="56" height="40" rx="10"/><rect x="200" y="254" width="56" height="40" rx="10"/><rect x="138" y="298" width="56" height="40" rx="10"/><rect x="200" y="298" width="56" height="40" rx="10"/><rect x="138" y="342" width="56" height="40" rx="10"/><rect x="200" y="342" width="56" height="40" rx="10"/><rect x="138" y="386" width="56" height="40" rx="10"/><rect x="200" y="386" width="56" height="40" rx="10"/></g>
+<g fill="#6FE9DB"><rect x="262" y="210" width="56" height="40" rx="10"/><rect x="262" y="254" width="56" height="40" rx="10"/><rect x="262" y="298" width="56" height="40" rx="10"/><rect x="262" y="342" width="56" height="40" rx="10"/><rect x="262" y="386" width="56" height="40" rx="10"/></g>
+<g fill="#FF9FCC"><rect x="324" y="210" width="56" height="40" rx="10"/><rect x="324" y="254" width="56" height="40" rx="10"/><rect x="324" y="298" width="56" height="40" rx="10"/><rect x="324" y="342" width="56" height="40" rx="10"/><rect x="324" y="386" width="56" height="40" rx="10"/></g>
+<g fill="#FFE07A"><rect x="386" y="210" width="56" height="40" rx="10"/><rect x="386" y="254" width="56" height="40" rx="10"/><rect x="386" y="298" width="56" height="40" rx="10"/><rect x="386" y="342" width="56" height="40" rx="10"/><rect x="386" y="386" width="56" height="40" rx="10"/></g>
+</g>
+<!-- scan band -->
+<g class="sf-scan">
+<rect x="138" y="206" width="40" height="224" rx="8" fill="#FFC21A" fill-opacity=".38"/>
+<rect x="138" y="206" width="4" height="224" rx="2" fill="#C2127A"/>
+</g>
+<g class="sf-s" font-size="16" font-weight="800" fill="#1A1F4B" text-anchor="middle">
+<text x="166" y="236">100</text><text x="228" y="236">240</text><text x="290" y="236">81</text><text x="352" y="236">14</text><text x="414" y="236">5</text>
+<text x="166" y="280">64</text><text x="228" y="280">64</text><text x="290" y="280">52</text><text x="352" y="280">9</text><text x="414" y="280">3</text>
+<text x="166" y="324">31</text><text x="228" y="324">31</text><text x="290" y="324">28</text><text x="352" y="324">2</text><text x="414" y="324">1</text>
+<text x="166" y="368">48</text><text x="228" y="368">48</text><text x="290" y="368">40</text><text x="352" y="368">6</text><text x="414" y="368">2</text>
+<text x="166" y="412">100</text><text x="228" y="412">137</text><text x="290" y="412">91</text><text x="352" y="412">7</text><text x="414" y="412">2</text>
+</g>
+<g>
+<rect x="452" y="215" width="88" height="30" rx="15" fill="#D7192B"/><rect x="452" y="259" width="88" height="30" rx="15" fill="#00C2B0"/><rect x="452" y="303" width="88" height="30" rx="15" fill="#00C2B0"/><rect x="452" y="347" width="88" height="30" rx="15" fill="#00C2B0"/><rect x="452" y="391" width="88" height="30" rx="15" fill="#D7192B"/>
+</g>
+<g class="sf-s" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">
+<text x="496" y="236">false</text><text x="496" y="280" fill="#10153A">true</text><text x="496" y="324" fill="#10153A">true</text><text x="496" y="368" fill="#10153A">true</text><text x="496" y="412">false</text>
+</g>
+<rect x="52" y="436" width="492" height="26" rx="13" fill="#C2127A"/>
+<text class="sf-s" x="298" y="454" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">A passing count is not compliance certification</text>
+
+<!-- browser gate panel -->
+<rect x="584" y="130" width="380" height="340" rx="26" fill="#C2127A"/>
+<path d="M584 170 H964 V444 Q964 470 938 470 H610 Q584 470 584 444 Z" fill="#1A1F4B"/>
+<rect x="584" y="170" width="380" height="300" fill="none"/>
+<text class="sf-s" x="602" y="157" font-size="17" font-weight="800" fill="#fff">Browser GraphQL gate</text>
+<text class="sf-s" x="946" y="157" font-size="14" font-weight="700" fill="#F1EBFF" text-anchor="end">metadata only</text>
+<!-- fill panel body with cobalt for contrast -->
+<path d="M584 170 H964 V444 Q964 470 938 470 H610 Q584 470 584 444 Z" fill="#4B1FA8"/>
+
+<!-- browser icon -->
+<rect x="598" y="176" width="48" height="142" rx="10" fill="#fff"/>
+<rect x="598" y="176" width="48" height="16" rx="8" fill="#FFC21A"/>
+<rect x="598" y="184" width="48" height="8" fill="#FFC21A"/>
+<g fill="#1A1F4B"><circle cx="608" cy="184" r="2.5"/><circle cx="617" cy="184" r="2.5"/><circle cx="626" cy="184" r="2.5"/></g>
+<g fill="#D9CCFF"><rect x="606" y="204" width="32" height="8" rx="4"/><rect x="606" y="220" width="22" height="8" rx="4"/><rect x="606" y="236" width="32" height="8" rx="4"/><rect x="606" y="252" width="26" height="8" rx="4"/></g>
+<text class="sf-s" x="622" y="338" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">Browser</text>
+
+<!-- lanes -->
+<g stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"><line x1="650" y1="208" x2="830" y2="208"/><line x1="650" y1="286" x2="796" y2="286"/></g>
+<g fill="none" stroke="#FFC21A" stroke-width="5" stroke-linecap="round"><path class="sf-run" pathLength="100" d="M650 208 H830"/></g>
+<!-- query packet -->
+<g class="sf-q"><rect x="662" y="194" width="62" height="28" rx="14" fill="#FFC21A"/><text class="sf-m" x="693" y="213" font-size="14" font-weight="800" fill="#1A1F4B" text-anchor="middle">query</text></g>
+<!-- mutation packet -->
+<g class="sf-mu"><rect x="662" y="272" width="78" height="28" rx="14" fill="#C2127A"/><text class="sf-m" x="701" y="291" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">mutation</text></g>
+<!-- gates -->
+<rect x="797" y="180" width="10" height="20" rx="3" fill="#00E5CF"/><rect x="797" y="216" width="10" height="20" rx="3" fill="#00E5CF"/>
+<g class="sf-wall"><rect x="794" y="258" width="16" height="56" rx="5" fill="#C2127A" stroke="#fff" stroke-width="2.5"/>
+<path d="M798 280 l8 8 M806 280 l-8 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></g>
+<!-- result cards -->
+<rect x="830" y="180" width="118" height="56" rx="14" fill="#fff"/>
+<circle cx="852" cy="208" r="11" fill="#00C2B0"/><path d="M846 208 l4 5 8 -9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="sf-s" x="870" y="205" font-size="15" font-weight="800" fill="#1A1F4B">captured</text><text class="sf-s" x="870" y="224" font-size="14" font-weight="700" fill="#1A1F4B">metadata</text>
+<rect x="830" y="258" width="118" height="56" rx="14" fill="#D7192B"/>
+<circle cx="852" cy="286" r="11" fill="#fff"/><path d="M847 281 l10 10 M857 281 l-10 10" stroke="#D7192B" stroke-width="3" stroke-linecap="round"/>
+<text class="sf-s" x="870" y="283" font-size="15" font-weight="800" fill="#fff">blocked</text><text class="sf-s" x="870" y="302" font-size="14" font-weight="700" fill="#fff">mutation</text>
+
+<line x1="598" y1="350" x2="948" y2="350" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+<g class="sf-s" font-size="14" font-weight="700" fill="#fff">
+<text x="600" y="374" fill="#6FF2E4" font-weight="800">Allowed: parsed queries only</text>
+<text x="600" y="396" font-weight="800" fill="#FF9FCC">Blocked:</text>
+<text x="672" y="396">mutations, subscriptions,</text>
+<text x="600" y="416">unknown APIs, persisted queries,</text>
+<text x="600" y="436">WebSockets</text>
+<text x="600" y="458" fill="#FFC21A">Login and MFA stay manual.</text>
+</g>
 </svg>

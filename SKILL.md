@@ -1,9 +1,9 @@
 ---
-name: secureframe-ops
+name: secureframe-inspect
 description: Inspect Secureframe compliance resources, export count-only baselines, or use a private Playwright session to capture GraphQL query metadata.
 ---
 
-# Secureframe Ops
+# Secureframe Inspect
 
 A compliance baseline without a folder full of personal data.
 

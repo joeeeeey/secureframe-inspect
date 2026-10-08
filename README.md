@@ -1,8 +1,10 @@
-# Secureframe Ops
+# Secureframe Inspect
+
+<p><img src="assets/provider-logo.svg" alt="Secureframe provider logo" width="200"></p>
 
 **A compliance baseline without a folder full of personal data.**
 
-![Secureframe Ops workflow](assets/workflow.svg)
+![Secureframe Inspect workflow](assets/workflow.svg)
 
 A standalone skill for **Codex · Claude Code · Cursor**, backed by a portable Python CLI.
 Independent community project; not affiliated with or endorsed by the provider.
@@ -19,17 +21,17 @@ Independent community project; not affiliated with or endorsed by the provider.
 Requires Node.js **22.20+** for the tested skills installer.
 
 ```sh
-npx skills@1.7.1 add joeeeeey/secureframe-ops --agent codex claude-code cursor --yes
+npx skills@1.7.1 add joeeeeey/secureframe-inspect --agent codex claude-code cursor --yes
 ```
 
 The implementation is initially delivered in a pull request. Until that PR is merged,
 reviewers can install the branch with:
 
 ```sh
-npx skills@1.7.1 add 'https://github.com/joeeeeey/secureframe-ops#feat/standalone-skill' --agent codex claude-code cursor --yes
+npx skills@1.7.1 add 'https://github.com/joeeeeey/secureframe-inspect#feat/standalone-skill' --agent codex claude-code cursor --yes
 ```
 
-Then ask your agent to use **secureframe-ops**. The standard SKILL.md and bundled CLI are the
+Then ask your agent to use **secureframe-inspect**. The standard SKILL.md and bundled CLI are the
 portable interface; no dependency on another personal skill is needed.
 
 ## 🔎 Try it
@@ -82,5 +84,6 @@ resource names, logs and account metadata may still be private: review output be
 
 Extracted and maintained from the author's existing local skill implementation, with
 account-specific defaults and private operational notes removed. Documentation, fixtures and
-SVG artwork in this distribution are original. External runtimes and provider services retain
+workflow SVG artwork in this distribution are original. Provider marks are attributed in
+[brand sources](assets/BRAND-SOURCES.md) and excluded from the MIT license. External runtimes and provider services retain
 their own licenses and terms; this repository does not redistribute them.
