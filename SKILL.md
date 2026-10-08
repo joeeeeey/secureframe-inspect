@@ -1,6 +1,6 @@
 ---
 name: secureframe-ops
-description: Inspect Secureframe compliance resources and export count-only baselines with bounded pagination. Use for framework, control, test, integration or inventory checks.
+description: Inspect Secureframe compliance resources, export count-only baselines, or use a private Playwright session to capture GraphQL query metadata.
 ---
 
 # Secureframe Ops
