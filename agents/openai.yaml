@@ -1,0 +1,4 @@
+interface:
+  display_name: "Secureframe Ops"
+  short_description: "A compliance baseline without a folder full of personal data."
+  default_prompt: "Use $secureframe-ops to inspect the requested scope and report verified results."
